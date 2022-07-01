@@ -31,9 +31,22 @@ curl  https://localhost:8443/hello -k -H 'host: hello.envoyproxy.io'
 ```
 
 
-## WHen CA expired (TBD)
+## WHen CA expired
 
+```
+<!doctype html>
+<html lang=en>
+<title>403 Forbidden</title>
+<h1>Forbidden</h1>
+<p>{&#x27;message&#x27;: &#x27;Certificate Expired&#x27;}</p>
+```
 
+## When CA Self signed
 
-
-## When CA Self signed (TBD)
+```
+<!doctype html>
+<html lang=en>
+<title>403 Forbidden</title>
+<h1>Forbidden</h1>
+<p>{&#x27;message&#x27;: &#x27;Self Signed Certificate Presented&#x27;}</p>
+```

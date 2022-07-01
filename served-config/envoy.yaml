@@ -66,9 +66,9 @@ static_resources:
                 filename: /etc/certs/tls.key
             validation_context:
               trust_chain_verification: ACCEPT_UNTRUSTED
+              allow_expired_certificate: true
               trusted_ca:
                 filename: /etc/certs/tls.crt
-                
   clusters:
   - name: upstream
     type: STRICT_DNS
